@@ -2,7 +2,7 @@ from pathlib import Path
 
 def show_tree(path, level=0):
     indent = "    " * level
-
+    
     for item in path.iterdir():
         if item.is_dir():
             print(f"{indent}[DIR]  {item.name}")
